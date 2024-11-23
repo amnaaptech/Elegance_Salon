@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #222;
+    color: #f5c71a;
+}
+/* Input Fields */
+#fullname,#contact,#email,#date, select {
+    background: transparent;
+    border: 1px solid #d6a553;
+    border-color: #d6a553;
+}
+
+#fullname:focus,#contact:focus,#email:focus,#date:focus, select:focus {
+    background: transparent; /* Ensure background stays transparent */
+    /* border-color: #d6a553; */
+    box-shadow: 0 0 0 0.2rem rgba(162, 141, 20, 0.25); 
+    color: #6C7293; /* Keep text color consistent */
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px);
+    padding: 20px;
+}
+
+.appointment-container {
+    background-color: #191C24;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.appointment-container h1 {
+    text-align: center;
+    color: #d6a553;
+    margin-bottom: 30px;
+}
+
+/* Style for form control */
+input {
+    background: transparent;
+    border: 1px solid #d6a553;
+}
+label {
+    font-size: 18px;
+    color: #d6a553;
+}
+/* Service List Styling */
+#service-list {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.service-name {
+    font-size: 18px;
+    color: #6C7293;
+}
+
+.service-price {
+    color: #6C7293;
+    font-size: 18px;
+}
+
+.service-checkbox {
+    text-align: right;
+}
+
+.total-price {
+    font-size: 25px;
+    color: #d6a553;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid #555;
+    margin-top: 10px;
+}
+  /* Modal styling */
+  .modal-content {
+    background-color: #000;
+    color: #ffd700;
+    border-radius: 8px;
+}
+.modal-header, .modal-footer {
+    border: none;
+}
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal.fade .modal-dialog {
+    transform: scale(0.7);
+    transition: all 0.3s ease;
+}
+.modal.fade.show .modal-dialog {
+    transform: scale(1);
+}
